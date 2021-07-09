@@ -1,7 +1,13 @@
 * {
   color: rgb(240, 238, 238);
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family:
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  "Open Sans",
+  "Helvetica Neue",
+  sans-serif;
 }
 
 .logo {
@@ -87,13 +93,14 @@ p {
   line-height: 28px;
   max-width: 85vw;
 }
-ul:before {
-  content: attr(aria-label);
+
+.title {
   font-size: 90%;
   font-weight: 500;
   color: #9490ff;
   margin: 20px;
 }
+
 ul,
 li {
   list-style-type: none;
