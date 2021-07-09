@@ -1,2 +1,37 @@
-# portfolio
-My personal portfolio with my most relevant projects.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Portfolio
+
+> My personal portfolio with my most relevant projects.
+
+Here you will eventually find some awesome projects built by yours truly.
+
+## Built With
+
+- HTML
+- CSS
+
+## Authors
+
+👤 **Alex Hamn**
+
+- GitHub: [@alexhamn](https://github.com/AlexHamn)
+- LinkedIn: [AlexGamino](https://linkedin.com/in/alex-gamino-81aab3214/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- you ;\*
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
