@@ -6,6 +6,12 @@
 
 Here you will eventually find some awesome projects built by yours truly.
 
+## Setup
+
+- git clone `portfolio`
+- cd into the folder
+- open `index.html` with live server
+
 ## Built With
 
 - HTML
