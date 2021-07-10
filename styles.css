@@ -1,0 +1,131 @@
+* {
+  color: rgb(240, 238, 238);
+  font-family:
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgb(240, 238, 238);
+  margin: 1px;
+}
+
+.container {
+  width: 100vw;
+  border: 100px;
+  background: #191765;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #646369;
+  margin: 1px;
+}
+
+.head {
+  background: url(media/EllipseLeft.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-right: 1px;
+  margin-bottom: 10px;
+}
+
+.bod {
+  flex-direction: column;
+  border-bottom: 1px;
+}
+
+.navigation {
+  margin-top: 50px;
+  border: none;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.skills {
+  background: url(media/EllipseRight.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 2px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section {
+  flex-direction: column;
+  min-height: 10vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i {
+  color: #edecff;
+  font-size: 100px;
+}
+
+h1 {
+  color: #7d73fc;
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 63px;
+  margin-bottom: 1px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 62vw;
+  margin-top: 1px;
+}
+
+.title {
+  font-size: 90%;
+  font-weight: 500;
+  color: #9490ff;
+  margin: 20px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  margin: 15px;
+}
+
+ul {
+  flex-basis: 40vw;
+  margin: 20px;
+}
