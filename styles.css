@@ -18,6 +18,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: rgb(240, 238, 238);
+  margin: 0px;
+  
 }
 
 .container {
@@ -27,29 +29,39 @@
   display: flex;
   align-items: center;
   text-align: center;
+  border-bottom: 1px solid #646369;
+  margin: 0px;
+}
+
+.head {
+  background: url(media/EllipseLeft.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-right: 0px;
+  margin-bottom: 10px;
 }
 
 .bod {
   flex-direction: column;
+  border-bottom: 0px;
 }
 
 .navigation {
   margin-top: 50px;
+  border: none;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .skills {
-  background: url(/media/EllipseRight.svg) #191765;
+  background: url(media/EllipseRight.svg);
   background-repeat: no-repeat;
   background-position: top right;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.head {
-  background: url(/media/EllipseLeft.svg) #191765;
-  background-repeat: no-repeat;
+  margin-left: 2px;
 }
 
 header {
@@ -61,7 +73,6 @@ header {
 section {
   flex-direction: column;
   min-height: 10vh;
-  border: 10px solid goldenrod;
 }
 
 h1,
@@ -80,16 +91,21 @@ h1 {
   color: #7d73fc;
   font-weight: bold;
   font-size: 48px;
+  margin-top: 63px;
+  margin-bottom: 0px;
 }
 
 h2 {
   font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 p {
   font-size: 20px;
   line-height: 28px;
-  max-width: 85vw;
+  max-width: 62vw;
+  margin-top: 0px;
 }
 
 .title {
@@ -102,11 +118,15 @@ p {
 ul,
 li {
   list-style-type: none;
-  margin: 20px;
   padding: 0;
   text-align: left;
 }
 
+li{
+  margin: 15px;
+}
+
 ul {
   flex-basis: 40vw;
+  margin: 20px;
 }
