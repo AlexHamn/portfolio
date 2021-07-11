@@ -8,6 +8,7 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+    background: none;
 }
 
 .logo {
@@ -23,10 +24,10 @@
 
 .container {
   width: 100vw;
-  border: 100px;
   background: #191765;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   border-bottom: 1px solid #646369;
   margin: 1px;
@@ -34,10 +35,19 @@
 
 .grid {
   display: grid;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid > * {
+  /* background: burlywood; */
+}
+
+.grid > *:nth-child(odd){
+  /* background: tomato; */
 }
 
 .head {
-  background: url(media/EllipseLeft.svg);
+  background: url(media/ellipse1.svg);
   background-repeat: no-repeat;
   background-position: top left;
   margin-right: 1px;
@@ -57,7 +67,7 @@
 }
 
 .skills {
-  background: url(media/EllipseRight.svg);
+  background: url(media/ellipse2.svg);
   background-repeat: no-repeat;
   background-position: top right;
   flex-direction: row;
@@ -74,12 +84,19 @@
   margin: 20px;
 }
 
+.subtitle {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
 .work {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2em;
   height: 20vh;
   padding: 0em, 1em;
+  margin-bottom: 20vh;
 }
 
 .handles {
@@ -96,7 +113,32 @@
 
 .projects {
   grid-template-columns: 100%;
-  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: repeat(4, 1fr);
+  padding-top: 60px;
+  background: url(media/ellipse3.svg), url(media/ellipse4.svg), url(media/ellipse5.svg), url(media/ellipse6.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right 25%, left center, right 75%;
+}
+
+.project {
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: transparent;
+  background: none;
+}
+
+.languages {
+  justify-content: center;
+  border-bottom: transparent;
+  background: none;
+}
+
+.languages > * {
+  width: min-content;
+  height: 40px;
+  padding: 10px;
+  border-right: 1px solid #646369;
+  border-left: 1px solid #646369;
 }
 
 header {
@@ -131,11 +173,6 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
-  margin-top: 30px;
-  margin-bottom: 70px;
-}
-h3 {
   font-weight: 500;
   font-size: 40px;
   line-height: 130%;
@@ -146,6 +183,14 @@ h3 {
   padding-bottom: 1em;
   text-align: left;
   border-bottom: 1px solid #646369;
+}
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 137%;
+  color: #FFFFFF;
+  margin: 24px 0px;
 }
 h4 {
   font-weight: 500;
@@ -176,4 +221,29 @@ li {
 ul {
   flex-basis: 40vw;
   margin: 20px;
+}
+
+button {
+  all: unset;
+  align-self: flex-start;
+  justify-self: start;
+  flex: none;
+  display: flex;
+  position: static;
+  width: 90px;
+  height: 48px;
+  left: 12px;
+  top: 12px;
+  background: #7D73FC;
+  margin: 24px 0px;
+  margin-right: 65vw;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 200%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #EDECFF;
 }
