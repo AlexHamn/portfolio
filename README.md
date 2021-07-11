@@ -8,9 +8,9 @@ Here you will eventually find some awesome projects built by yours truly.
 
 ## Setup
 
-- git clone `portfolio`
-- cd into the folder
-- open `index.html` with live server
+- git clone https://github.com/AlexHamn/portfolio.git
+- cd portfolio
+- open `index.html` and switch to movile view
 
 ## Built With
 

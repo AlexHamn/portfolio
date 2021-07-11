@@ -38,14 +38,6 @@
   grid-auto-rows: minmax(100px, auto);
 }
 
-/* .grid > * {
-  background: burlywood;
-}
-
-.grid > *:nth-child(odd) {
-  background: tomato;
-} */
-
 .head {
   background: url(media/ellipse1.svg);
   background-repeat: no-repeat;
@@ -95,7 +87,7 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2em;
   height: 20vh;
-  margin-bottom: 20vh;
+  margin-bottom: 1em;
 }
 
 .handles {
@@ -106,13 +98,15 @@
 .handles > * {
   width: 40px;
   height: 40px;
-  padding: 10px;
+  /* padding: 10px; */
+  margin: 1px;
   padding-top: 60px;
+  text-align: center;
 }
 
 .projects {
   grid-template-columns: 100%;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 100px, repeat(4, 1fr);
   padding-top: 60px;
   background: url(media/ellipse3.svg), url(media/ellipse4.svg), url(media/ellipse5.svg), url(media/ellipse6.svg);
   background-repeat: no-repeat;
@@ -136,6 +130,7 @@
   width: min-content;
   height: 40px;
   padding: 10px;
+  margin: auto;
   border-right: 1px solid #646369;
   border-left: 1px solid #646369;
 }
@@ -176,7 +171,6 @@ h2 {
   font-size: 40px;
   line-height: 130%;
   color: #9490ff;
-  margin-top: 2.5em;
   padding-left: 1em;
   padding-bottom: 1em;
   text-align: left;
@@ -234,6 +228,7 @@ button {
   left: 12px;
   top: 12px;
   background: #7d73fc;
+  margin-top: 14px;
   margin-bottom: 34px;
   margin-right: 65vw;
   font-style: normal;
@@ -245,4 +240,17 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #edecff;
+}
+
+button:hover {
+  background: #7d73fc;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+button:active {
+  background: #5e42d7;
+}
+
+button:disabled {
+  background: #2a2b33;
 }
