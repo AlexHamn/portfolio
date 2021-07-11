@@ -105,7 +105,7 @@
 
 .projects {
   grid-template-columns: 100%;
-  grid-template-rows: 100px, repeat(4, 1fr);
+  grid-template-rows: auto;
   padding-top: 60px;
   background: url(media/ellipse3.svg), url(media/ellipse4.svg), url(media/ellipse5.svg), url(media/ellipse6.svg);
   background-repeat: no-repeat;
