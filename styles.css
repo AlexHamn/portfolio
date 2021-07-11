@@ -8,7 +8,7 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-    background: none;
+  background: none;
 }
 
 .logo {
@@ -38,13 +38,13 @@
   grid-auto-rows: minmax(100px, auto);
 }
 
-.grid > * {
-  /* background: burlywood; */
+/* .grid > * {
+  background: burlywood;
 }
 
-.grid > *:nth-child(odd){
-  /* background: tomato; */
-}
+.grid > *:nth-child(odd) {
+  background: tomato;
+} */
 
 .head {
   background: url(media/ellipse1.svg);
@@ -95,7 +95,6 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2em;
   height: 20vh;
-  padding: 0em, 1em;
   margin-bottom: 20vh;
 }
 
@@ -176,27 +175,27 @@ h2 {
   font-weight: 500;
   font-size: 40px;
   line-height: 130%;
-  color: #9490FF;
-  margin: 24px 0px;
+  color: #9490ff;
   margin-top: 2.5em;
   padding-left: 1em;
   padding-bottom: 1em;
   text-align: left;
   border-bottom: 1px solid #646369;
 }
+
 h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 137%;
-  color: #FFFFFF;
-  margin: 24px 0px;
+  color: #fff;
 }
+
 h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  color: #A2A3AE;
+  color: #a2a3ae;
   margin: 0px 12px;
 }
 
@@ -210,7 +209,7 @@ p {
 ul,
 li {
   list-style-type: none;
-  padding: 0;
+  padding: 1px;
   text-align: left;
 }
 
@@ -234,8 +233,8 @@ button {
   height: 48px;
   left: 12px;
   top: 12px;
-  background: #7D73FC;
-  margin: 24px 0px;
+  background: #7d73fc;
+  margin-bottom: 34px;
   margin-right: 65vw;
   font-style: normal;
   font-weight: 500;
@@ -245,5 +244,5 @@ button {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #EDECFF;
+  color: #edecff;
 }
