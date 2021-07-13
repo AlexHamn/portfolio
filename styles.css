@@ -134,6 +134,13 @@
   border-left: 1px solid #646369;
 }
 
+.bottom > li {
+  padding: 1%;
+}
+
+footer > p {
+display: inline-block;}
+
 header {
   display: flex;
   flex-direction: row;
