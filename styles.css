@@ -1,13 +1,13 @@
 * {
   color: rgb(240, 238, 238);
   font-family:
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  "Open Sans",
-  "Helvetica Neue",
-  sans-serif;
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   background: none;
 }
 
@@ -108,16 +108,16 @@
   grid-template-rows: auto;
   padding-top: 60px;
   background:
-  url(media/ellipse3.svg),
-  url(media/ellipse4.svg),
-  url(media/ellipse5.svg),
-  url(media/ellipse6.svg);
+    url(media/ellipse3.svg),
+    url(media/ellipse4.svg),
+    url(media/ellipse5.svg),
+    url(media/ellipse6.svg);
   background-repeat: no-repeat;
   background-position:
-  left top,
-  right 25%,
-  left center,
-  right 75%;
+    left top,
+    right 25%,
+    left center,
+    right 75%;
 }
 
 .project {
@@ -142,16 +142,8 @@
   border-left: 1px solid #646369;
 }
 
-.bottom > li {
-  padding: 1%;
-}
-
 .contact {
   padding-bottom: 4.7em;
-}
-
-footer > p {
-  display: inline-block;
 }
 
 header {
@@ -276,9 +268,9 @@ button:disabled {
   background: #2a2b33;
 }
 
-/* form ul li {
-  align-self: center;
-} */
+.bottom > li {
+  padding: 1%;
+}
 
 input,
 textarea {
@@ -287,8 +279,8 @@ textarea {
   height: 30px;
   padding: 1em;
   font-family:
-  Inter,
-  sans-serif;
+    Inter,
+    sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
@@ -296,7 +288,7 @@ textarea {
   color: rgb(20, 20, 20);
 }
 
-input[type="text"]{
+input[type="text"] {
   margin-top: 1px;
 }
 
@@ -305,5 +297,9 @@ textarea {
 }
 
 input ::placeholder {
-  color: #81818C;
+  color: #81818c;
+}
+
+footer > p {
+  display: inline-block;
 }
