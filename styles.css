@@ -1,7 +1,13 @@
 * {
   color: rgb(240, 238, 238);
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family:
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  "Open Sans",
+  "Helvetica Neue",
+  sans-serif;
   background: none;
 }
 
@@ -101,10 +107,17 @@
   grid-template-columns: 100%;
   grid-template-rows: auto;
   padding-top: 60px;
-  background: url(media/ellipse3.svg), url(media/ellipse4.svg),
-    url(media/ellipse5.svg), url(media/ellipse6.svg);
+  background:
+  url(media/ellipse3.svg),
+  url(media/ellipse4.svg),
+  url(media/ellipse5.svg),
+  url(media/ellipse6.svg);
   background-repeat: no-repeat;
-  background-position: left top, right 25%, left center, right 75%;
+  background-position:
+  left top,
+  right 25%,
+  left center,
+  right 75%;
 }
 
 .project {
@@ -131,6 +144,10 @@
 
 .bottom > li {
   padding: 1%;
+}
+
+.contact {
+  padding-bottom: 4.7em;
 }
 
 footer > p {
@@ -179,6 +196,13 @@ h2 {
   border-bottom: 1px solid #646369;
 }
 
+.contact > h2 {
+  text-align: center;
+  padding: 1px;
+  padding-top: 1.5em;
+  border: transparent;
+}
+
 h3 {
   font-style: normal;
   font-weight: 500;
@@ -198,7 +222,7 @@ h4 {
 p {
   font-size: 20px;
   line-height: 28px;
-  max-width: 62vw;
+  max-width: 84vw;
   margin-top: 1px;
 }
 
@@ -217,11 +241,9 @@ ul {
   flex-basis: 40vw;
   margin: 20px;
 }
-.container p {
-  width: 100%;
-}
-button,
-.btn {
+
+button {
+  all: unset;
   width: 90px;
   height: 48px;
   left: 12px;
@@ -241,27 +263,16 @@ button,
   color: #edecff;
 }
 
-button {
-  all: unset;
-  align-self: flex-start;
-  justify-self: start;
-  flex: none;
-  display: flex;
-  position: static;
-}
-button:hover,
-.btn:hover {
+button:hover {
   background: #7d73fc;
   box-shadow: 1px 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-button:active,
-.btn:active {
+button:active {
   background: #5e42d7;
 }
 
-button:disabled,
-.btn:disabled {
+button:disabled {
   background: #2a2b33;
 }
 
@@ -269,24 +280,30 @@ button:disabled,
   align-self: center;
 } */
 
-input[type="text"],
-input[type="email"],
+input,
 textarea {
   width: 100%;
   margin-top: 39px;
   height: 30px;
-  padding: 6px;
-  font-family: Inter, sans-serif;
+  padding: 1em;
+  font-family:
+  Inter,
+  sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   background-color: #fff;
+  color: rgb(20, 20, 20);
+}
+
+input[type="text"]{
+  margin-top: 1px;
 }
 
 textarea {
   height: 114px;
 }
 
-input[type="email"]::placeholder{
-  color: rgb(20, 20, 20);
+input ::placeholder {
+  color: #81818C;
 }

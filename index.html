@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
   <body class="container bod">
@@ -18,7 +16,7 @@
     </header>
     <main>
       <section class="container head">
-        <h1>Laura Jong</h1>
+        <h1>Alex Hamn</h1>
         <p class="subtitle">Software Developer</p>
         <p>
           I can help you build a product , feature or website Look through some
@@ -71,9 +69,7 @@
             <a href="#"><img src="media/icons/m.svg" alt="m" /></a>
           </li>
         </ul>
-        <div>
-          <h4>↓ Work</h4>
-        </div>
+        <h4>↓ Work</h4>
       </section>
       <section class="grid projects">
         <div>
@@ -83,9 +79,7 @@
           </h2>
         </div>
         <article class="container project">
-          <img
-            src="https://picsum.photos/327/236?grayscale"
-            alt="placeholder"
+          <img src="https://picsum.photos/327/236?grayscale" alt="placeholder"
           />
           <h3>Multi-Post Stories</h3>
           <p>
@@ -102,9 +96,7 @@
           <button>See Project</button>
         </article>
         <article class="container project">
-          <img
-            src="https://picsum.photos/327/236?grayscale"
-            alt="placeholder"
+          <img src="https://picsum.photos/327/236?grayscale" alt="placeholder"
           />
           <h3>Multi-Post Stories</h3>
           <p>
@@ -121,9 +113,7 @@
           <button>See Project</button>
         </article>
         <article class="container project">
-          <img
-            src="https://picsum.photos/327/236?grayscale"
-            alt="placeholder"
+          <img src="https://picsum.photos/327/236?grayscale" alt="placeholder"
           />
           <h3>Multi-Post Stories</h3>
           <p>
@@ -140,12 +130,10 @@
           <button>See Project</button>
         </article>
         <article class="container project">
-          <img
-            src="https://picsum.photos/327/236?grayscale"
-            alt="placeholder"
+          <img src="https://picsum.photos/327/236?grayscale" alt="placeholder"
           />
           <h3>Multi-Post Stories</h3>
-          <p>
+          <p> 
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard dummy text ever
             since the 1500s, when an unknown printer took a standard dummy text.
@@ -159,43 +147,26 @@
           <button>See Project</button>
         </article>
       </section>
-      <section class="container">
+      <section class="container contact">
         <h2>CONTACT US</h2>
-        <p>
+        <p> 
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
-          with it
+          with it 
         </p>
         <form action="https://formspree.io/f/mbjqaodr" method="POST">
           <ul>
             <li>
-              <input
-                type="text"
-                id="name"
-                name="user_name"
-                placeholder="Text Input"
-              />
+              <input type="text" id="name" name="user_name" placeholder="Text Input" maxlength="30" required />
             </li>
             <li>
-              <input
-                type="email"
-                id="mail"
-                name="user_email"
-                placeholder="jeremy@gmail.com"
-              />
+              <input type="email" id="mail" name="user_email" placeholder="jeremy@gmail.com" required/>
             </li>
             <li>
-              <textarea
-                name="user_message"
-                id="msg"
-                placeholder="Enter text here"
-                maxlength="500"
-              ></textarea>
-            </li>
-            <li>
-              <input type="submit" value="Submit" class="btn" />
+              <textarea name="user_message" id="msg" placeholder="Enter text here" maxlength="500" required></textarea>
             </li>
           </ul>
+          <button type="submit" value="Submit" class="submit">Submit</button>
         </form>
       </section>
       <footer>
