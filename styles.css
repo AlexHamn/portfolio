@@ -41,7 +41,7 @@
 .head {
   background: url(media/ellipse1.svg);
   background-repeat: no-repeat;
-  background-position: -9em 0;
+  background-position: -9em -.5em;
   margin-right: 1px;
   margin-bottom: 10px;
 }
@@ -53,9 +53,14 @@
 
 .navigation {
   margin-top: 50px;
+  width: 100vw;
   border: none;
   justify-content: space-around;
   align-content: center;
+}
+
+.navigation > p:not(:first-of-type), i:not(:first-of-type) {
+  display: none;
 }
 
 .skills {
@@ -224,7 +229,7 @@ h4 {
 p {
   font-size: 20px;
   line-height: 28px;
-  max-width: 33em;
+  max-width: 23em;
   margin: 1em;
 }
 
@@ -241,7 +246,7 @@ li {
 
 ul {
   justify-self: center;
-  flex-basis: 80vw;
+  flex-basis: 40vw;
   margin: 20px;
 }
 
@@ -322,11 +327,36 @@ footer > p {
 }
 
 @media screen and (min-device-width: 1500px) {
-  .head {
-    background-position: left top;
+  
+  .navigation {
+    justify-content: flex-end;
   }
 
-  p {
-    max-width: 450px;
+  .navigation > * {
+    padding-left: 1em;
+  }
+
+  .navigation > i:first-of-type {
+    display: none;
+  }
+
+  .navigation > p:first-of-type {
+    justify-self: right;
+    /* width: 50vw; */
+    text-align: left;
+    padding-right: 60vw;
+  }
+
+  .navigation > p:not(:first-of-type), i:not(:first-of-type) {
+    display: block;
+    justify-self: flex-end;
+    padding-right: 2em;
+  }
+  .head {
+    background-position: 2em top;
+  }
+
+  .head > p {
+    display: block;
   }
 }
