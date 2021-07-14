@@ -134,16 +134,22 @@
 }
 
 .languages > * {
+  margin: unset;
   width: min-content;
   height: 40px;
   padding: 10px;
-  margin: auto;
   border-right: 1px solid #646369;
   border-left: 1px solid #646369;
 }
 
 .contact {
   padding-bottom: 4.7em;
+}
+
+.submit {
+  align-self: flex-end;
+  justify-self: center;
+  margin: 1px;
 }
 
 header {
@@ -188,6 +194,10 @@ h2 {
   border-bottom: 1px solid #646369;
 }
 
+.contact > * {
+  border-bottom: transparent;
+}
+
 .contact > h2 {
   text-align: center;
   padding: 1px;
@@ -230,8 +240,14 @@ li {
 }
 
 ul {
-  flex-basis: 40vw;
+  justify-self: center;
+  flex-basis: 80vw;
   margin: 20px;
+}
+
+form {
+  height: 40vh;
+  justify-content: center;
 }
 
 button {
@@ -275,7 +291,7 @@ button:disabled {
 input,
 textarea {
   all: unset;
-  width: 100%;
+  width: 80vw;
   margin-top: 39px;
   height: 30px;
   padding: 1em;
