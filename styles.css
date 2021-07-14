@@ -41,7 +41,7 @@
 .head {
   background: url(media/ellipse1.svg);
   background-repeat: no-repeat;
-  background-position: -9em -.5em;
+  background-position: -9em top;
   margin-right: 1px;
   margin-bottom: 10px;
 }
@@ -69,9 +69,13 @@
   background-position: top right;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: left;
   align-items: flex-start;
   margin-left: 2px;
+}
+
+.skills > ul {
+  width: min-content;
 }
 
 .title {
@@ -84,7 +88,7 @@
 .subtitle {
   font-size: 32px;
   margin-top: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 3em;
 }
 
 .work {
@@ -230,7 +234,7 @@ p {
   font-size: 20px;
   line-height: 28px;
   max-width: 23em;
-  margin: 1em;
+  margin: 2em;
 }
 
 ul,
@@ -358,5 +362,13 @@ footer > p {
 
   .head > p {
     display: block;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skills > ul {
+    max-width: min-content;
   }
 }
