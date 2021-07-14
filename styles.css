@@ -107,9 +107,17 @@
   grid-template-columns: 100%;
   grid-template-rows: auto;
   padding-top: 60px;
-  background: url(media/ellipse3.svg), url(media/ellipse4.svg), url(media/ellipse5.svg), url(media/ellipse6.svg);
+  background:
+    url(media/ellipse3.svg),
+    url(media/ellipse4.svg),
+    url(media/ellipse5.svg),
+    url(media/ellipse6.svg);
   background-repeat: no-repeat;
-  background-position: left top, right 25%, left center, right 75%;
+  background-position:
+    left top,
+    right 25%,
+    left center,
+    right 75%;
 }
 
 .project {
@@ -132,6 +140,10 @@
   margin: auto;
   border-right: 1px solid #646369;
   border-left: 1px solid #646369;
+}
+
+.contact {
+  padding-bottom: 4.7em;
 }
 
 header {
@@ -176,6 +188,13 @@ h2 {
   border-bottom: 1px solid #646369;
 }
 
+.contact > h2 {
+  text-align: center;
+  padding: 1px;
+  padding-top: 1.5em;
+  border: transparent;
+}
+
 h3 {
   font-style: normal;
   font-weight: 500;
@@ -195,7 +214,7 @@ h4 {
 p {
   font-size: 20px;
   line-height: 28px;
-  max-width: 62vw;
+  max-width: 84vw;
   margin-top: 1px;
 }
 
@@ -217,11 +236,6 @@ ul {
 
 button {
   all: unset;
-  align-self: flex-start;
-  justify-self: start;
-  flex: none;
-  display: flex;
-  position: static;
   width: 90px;
   height: 48px;
   left: 12px;
@@ -252,4 +266,41 @@ button:active {
 
 button:disabled {
   background: #2a2b33;
+}
+
+.bottom > li {
+  padding: 1%;
+}
+
+input,
+textarea {
+  all: unset;
+  width: 100%;
+  margin-top: 39px;
+  height: 30px;
+  padding: 1em;
+  font-family:
+    Inter,
+    sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: #fff;
+  color: rgb(20, 20, 20);
+}
+
+input[type="text"] {
+  margin-top: 1px;
+}
+
+textarea {
+  height: 114px;
+}
+
+input ::placeholder {
+  color: #81818c;
+}
+
+footer > p {
+  display: inline-block;
 }
