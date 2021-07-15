@@ -35,7 +35,7 @@
 
 .grid {
   display: grid;
-  grid-auto-rows: minmax(100px, auto);
+  
 }
 
 .head {
@@ -113,14 +113,14 @@
 }
 
 .handles > li h4 {
-  /* display: none; */
+  display: none;
   margin-right: 18vw;
   margin-left: 18vw;
 }
 
 .projects {
   grid-template-columns: 100%;
-  grid-template-rows: auto;
+  grid-template-rows: min-content;
   padding-top: 60px;
   background:
     url(media/ellipse3.svg),
@@ -152,7 +152,19 @@
   margin-top: 3em;
 }
 
+.project > img {
+  width: 80%;
+}
+
+.project-text {
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: transparent;
+  background: none;
+}
+
 .languages {
+  flex: unset;
   justify-content: center;
   border-bottom: transparent;
   background: none;
@@ -395,12 +407,68 @@ footer > p {
     display: block;
   }
 
-  .projects > div {
-    /* margin-bottom: 3.5em; */
+  .projects {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 20vw);
+    grid-gap: 2em;
+    margin: 1px 10vw 1px 10vw;
+  }
+
+  .projects > article {
+    grid-column: 1/4;
+  }
+
+  .projects > article:nth-child(odd) {
+    grid-column: 1/4;
+    flex-direction: row-reverse;
   }
 
   .projects > div h2 {
   max-width: 10em;
   padding-left: 10vw;
+  }
+
+  .project {
+    width: 80em;
+    margin: unset;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .project > * {
+  max-height: min-content;
+  padding: unset;
+  width: 80vw;
+}
+
+  .project > img {
+    width: 60%;
+  }
+
+  .project-text {
+    width: 38%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-left: 1em;
+  }
+
+  .project-text > p {
+    /* margin-left: unset; */
+    margin: 1em 1px 1em 1px;
+    text-align: start;
+    flex: 1;
+  }
+
+  .languages {
+    width: min-content;
+  }
+
+  /* h3 {
+    margin: 1px, 1px, 1px, 1px;
+  } */
+
+  button {
+    margin-bottom: unset;
   }
 }
