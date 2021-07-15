@@ -105,11 +105,17 @@
 }
 
 .handles > * {
-  width: 40px;
+  min-width: min-content;
   height: 40px;
   margin: 1px;
   padding-top: 60px;
   text-align: center;
+}
+
+.handles > li h4 {
+  /* display: none; */
+  margin-right: 18vw;
+  margin-left: 18vw;
 }
 
 .projects {
@@ -129,11 +135,21 @@
     right 75%;
 }
 
+.projects > div:first-of-type{
+  width: 100vw;
+  border-bottom: 1px solid #646369;
+}
+
+.projects > div h2 {
+  max-width: 6em;
+}
+
 .project {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: transparent;
   background: none;
+  margin-top: 3em;
 }
 
 .languages {
@@ -182,6 +198,7 @@ p,
 i {
   color: #edecff;
   font-size: 100px;
+  margin-bottom: unset;
 }
 
 h1 {
@@ -189,7 +206,6 @@ h1 {
   font-weight: bold;
   font-size: 48px;
   margin-top: 63px;
-  margin-bottom: 1px;
 }
 
 h2 {
@@ -200,7 +216,6 @@ h2 {
   padding-left: 1em;
   padding-bottom: 1em;
   text-align: left;
-  border-bottom: 1px solid #646369;
 }
 
 .contact > * {
@@ -211,7 +226,6 @@ h2 {
   text-align: center;
   padding: 1px;
   padding-top: 1.5em;
-  border: transparent;
 }
 
 h3 {
@@ -228,6 +242,7 @@ h4 {
   line-height: 32px;
   color: #a2a3ae;
   margin: 6px;
+
 }
 
 p {
@@ -370,5 +385,22 @@ footer > p {
 
   .skills > ul {
     max-width: min-content;
+  }
+
+  .work > h4 {
+    display: none;
+  }
+
+  .handles > li h4 {
+    display: block;
+  }
+
+  .projects > div {
+    /* margin-bottom: 3.5em; */
+  }
+
+  .projects > div h2 {
+  max-width: 10em;
+  padding-left: 10vw;
   }
 }
