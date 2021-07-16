@@ -120,7 +120,7 @@ body {
     left top,
     right 25%,
     left center,
-    right 75%;
+    right bottom;
 }
 
 .projects > div:first-of-type {
@@ -425,10 +425,11 @@ i:not(:first-of-type) {
   }
 
   .project {
-    width: 100%;
+    width: 85%;
     margin: unset;
     flex-direction: row;
     align-items: flex-end;
+    justify-self: center;
   }
 
   .project > * {
@@ -497,7 +498,7 @@ i:not(:first-of-type) {
   }
 
   form {
-    width: 66vw;
+    width: 43em;
   }
 
   input,
@@ -507,5 +508,13 @@ i:not(:first-of-type) {
 
   button {
     margin-bottom: unset;
+  }
+
+  form ul li:last-child {
+    text-align: center;
+  }
+
+  .contact > p {
+    margin-bottom: 4em;
   }
 }
