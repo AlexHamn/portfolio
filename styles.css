@@ -28,6 +28,19 @@ body {
   letter-spacing: 0.03em;
   color: rgb(240, 238, 238);
   margin: 1px;
+  animation-duration: 3s;
+  animation-name: rotate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+    font-size: 20px;
+  }
 }
 
 .container {
@@ -307,6 +320,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #edecff;
+  transition: 0.1s;
 }
 
 button:hover {
@@ -333,9 +347,7 @@ textarea {
   margin-top: 39px;
   height: 30px;
   padding: 1em;
-  font-family:
-    Inter,
-    sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
@@ -440,6 +452,12 @@ i:not(:first-of-type) {
 
   .project > img {
     width: 50%;
+    transition: transform 2s ease;
+    transition-duration: 0.3s;
+  }
+
+  .project > img:hover {
+    transform: scale(0.9);
   }
 
   .project-text {
