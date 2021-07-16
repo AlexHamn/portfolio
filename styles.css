@@ -72,11 +72,6 @@ body {
   margin-left: 2px;
 }
 
-.skills > ul {
-  max-width: 45%;
-  margin-left: 4%;
-}
-
 .title {
   font-size: 90%;
   font-weight: 500;
@@ -219,18 +214,18 @@ h2 {
   text-align: left;
 }
 
+.contact > h2 {
+  text-align: center;
+  padding: 1px;
+  padding-top: 1.5em;
+}
+
 .projects > div h2 {
   max-width: 6em;
 }
 
 .contact > * {
   border-bottom: transparent;
-}
-
-.contact > h2 {
-  text-align: center;
-  padding: 1px;
-  padding-top: 1.5em;
 }
 
 .contact > h2:not(:first-of-type) {
@@ -251,7 +246,6 @@ h4 {
   line-height: 32px;
   color: #a2a3ae;
   margin: 6px;
-
 }
 
 .handles > li h4 {
@@ -267,11 +261,6 @@ p {
   margin: 2em;
 }
 
-.navigation > p:not(:first-of-type),
-i:not(:first-of-type) {
-  display: none;
-}
-
 ul,
 li {
   list-style-type: none;
@@ -279,13 +268,18 @@ li {
   text-align: left;
 }
 
-li {
-  margin: 15px;
-}
-
 ul {
   justify-self: center;
   flex: 100%;
+}
+
+.skills > ul {
+  max-width: 45%;
+  margin-left: 4%;
+}
+
+li {
+  margin: 15px;
 }
 
 form {
@@ -366,7 +360,12 @@ footer > p {
 }
 
 .bottom > li p {
-    display: none;
+  display: none;
+}
+
+.navigation > p:not(:first-of-type),
+i:not(:first-of-type) {
+  display: none;
 }
 
 @media screen and (min-device-width: 1500px) {
@@ -393,14 +392,8 @@ footer > p {
     display: none;
   }
 
-  .bottom > li p {
-    display: block;
-    margin: unset;
-  }
-
   .navigation > p:first-of-type {
     justify-self: right;
-    /* width: 50vw; */
     text-align: left;
     padding-right: 60vw;
   }
@@ -410,6 +403,7 @@ footer > p {
     justify-self: flex-end;
     padding-right: 2em;
   }
+
   .head {
     background-position: 2em top;
   }
@@ -495,6 +489,11 @@ footer > p {
 
   .contact > h2:not(:first-of-type) {
     display: block;
+  }
+
+  .bottom > li p {
+    display: block;
+    margin: unset;
   }
 
   form {
