@@ -11,6 +11,14 @@
   background: none;
 }
 
+main {
+  background:
+  #191765 
+  url(media/ellipse2.svg);
+  background-repeat: no-repeat;
+  background-position: right 15em;
+}
+
 .logo {
   font-style: normal;
   font-weight: 500;
@@ -23,8 +31,7 @@
 }
 
 .container {
-  width: 100vw;
-  background: #191765;
+  /* width: 100vw; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,9 +71,6 @@
 }
 
 .skills {
-  background: url(media/ellipse2.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
@@ -75,7 +79,8 @@
 }
 
 .skills > ul {
-  width: min-content;
+  max-width: 45%;
+  margin-left: 4%;
 }
 
 .title {
@@ -240,6 +245,10 @@ h2 {
   padding-top: 1.5em;
 }
 
+.contact > h2:not(:first-of-type) {
+  display: none;
+}
+
 h3 {
   font-style: normal;
   font-weight: 500;
@@ -277,12 +286,12 @@ li {
 
 ul {
   justify-self: center;
-  flex-basis: 40vw;
-  margin: 20px;
+  flex: 100%;
 }
 
 form {
   height: 40vh;
+  width: 80vw;
   justify-content: center;
 }
 
@@ -327,7 +336,7 @@ button:disabled {
 input,
 textarea {
   all: unset;
-  width: 80vw;
+  width: 95%;
   margin-top: 39px;
   height: 30px;
   padding: 1em;
@@ -355,6 +364,10 @@ input ::placeholder {
 
 footer > p {
   display: inline-block;
+}
+
+.bottom > li p {
+    display: none;
 }
 
 @media screen and (min-device-width: 1500px) {
@@ -409,17 +422,18 @@ footer > p {
 
   .projects {
     grid-template-rows: auto;
-    grid-template-columns: repeat(4, 20vw);
-    grid-gap: 2em;
-    margin: 1px 10vw 1px 10vw;
+    grid-template-columns: repeat(4, 25vw);
+    grid-row-gap: 3em;
+    margin-bottom: 15em;
   }
 
   .projects > article {
-    grid-column: 1/4;
+    grid-column: 1/5;
+    align-items: center;
   }
 
   .projects > article:nth-child(odd) {
-    grid-column: 1/4;
+    /* grid-column: 1/4; */
     flex-direction: row-reverse;
   }
 
@@ -429,7 +443,7 @@ footer > p {
   }
 
   .project {
-    width: 80em;
+    width: 100%;
     margin: unset;
     flex-direction: row;
     align-items: flex-end;
@@ -442,7 +456,7 @@ footer > p {
 }
 
   .project > img {
-    width: 60%;
+    width: 50%;
   }
 
   .project-text {
@@ -464,11 +478,37 @@ footer > p {
     width: min-content;
   }
 
-  /* h3 {
-    margin: 1px, 1px, 1px, 1px;
-  } */
+  .contact {
+    margin: 1px;
+    width: 100vw;
+  }
+
+  .contact > h2:first-of-type {
+    display: none;
+  }
+
+  .contact > h2:not(:first-of-type) {
+  display: block;
+  }
+
+  form {
+    width: 66vw;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
 
   button {
     margin-bottom: unset;
+  }
+
+  footer > p {
+    display: none;
+  }
+
+  .bottom > li p {
+    display: block;
+    margin: unset;
   }
 }
