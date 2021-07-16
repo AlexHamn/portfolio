@@ -369,19 +369,6 @@ i:not(:first-of-type) {
 }
 
 @media screen and (min-device-width: 1500px) {
-  
-  .navigation {
-    justify-content: flex-end;
-  }
-
-  .navigation > * {
-    padding-left: 1em;
-  }
-
-  .navigation > i:first-of-type {
-    display: none;
-  }
-
   .project-text > p {
     margin: 1em 1px 1em 1px;
     text-align: start;
@@ -484,16 +471,29 @@ i:not(:first-of-type) {
     margin: unset;
   }
 
+  .navigation {
+    justify-content: flex-end;
+  }
+
+  .navigation > * {
+    padding-left: 1em;
+  }
+
   .navigation > p:first-of-type {
     justify-self: right;
     text-align: left;
     padding-right: 60vw;
   }
 
-  .navigation > p:not(:first-of-type), i:not(:first-of-type) {
+  .navigation > p:not(:first-of-type),
+  i:not(:first-of-type) {
     display: block;
     justify-self: flex-end;
     padding-right: 2em;
+  }
+
+  .navigation > i:first-of-type {
+    display: none;
   }
 
   form {
