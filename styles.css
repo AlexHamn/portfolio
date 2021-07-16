@@ -369,14 +369,14 @@ i:not(:first-of-type) {
 }
 
 @media screen and (min-device-width: 1500px) {
+  footer > p {
+    display: none;
+  }
+
   .project-text > p {
     margin: 1em 1px 1em 1px;
     text-align: start;
     flex: 1;
-  }
-
-  footer > p {
-    display: none;
   }
 
   .head {
