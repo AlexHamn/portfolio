@@ -5,6 +5,14 @@
   background: none;
 }
 
+body {
+  background:
+    #191765
+    url(media/ellipse2.svg);
+  background-repeat: no-repeat;
+  background-position: right 15em;
+}
+
 .logo {
   font-style: normal;
   font-weight: 500;
@@ -32,8 +40,6 @@
 }
 
 .container {
-  width: 100vw;
-  background: #191765;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,13 +50,12 @@
 
 .grid {
   display: grid;
-  grid-auto-rows: minmax(100px, auto);
 }
 
 .head {
   background: url(media/ellipse1.svg);
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: -9em top;
   margin-right: 1px;
   margin-bottom: 10px;
 }
@@ -62,18 +67,16 @@
 
 .navigation {
   margin-top: 50px;
+  width: 100vw;
   border: none;
   justify-content: space-around;
   align-content: center;
 }
 
 .skills {
-  background: url(media/ellipse2.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: left;
   align-items: flex-start;
   margin-left: 2px;
 }
@@ -88,7 +91,7 @@
 .subtitle {
   font-size: 32px;
   margin-top: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 3em;
 }
 
 .work {
@@ -105,7 +108,7 @@
 }
 
 .handles > * {
-  width: 40px;
+  min-width: min-content;
   height: 40px;
   margin: 1px;
   padding-top: 60px;
@@ -114,12 +117,21 @@
 
 .projects {
   grid-template-columns: 100%;
-  grid-template-rows: auto;
+  grid-template-rows: min-content;
   padding-top: 60px;
   background: url(media/ellipse3.svg), url(media/ellipse4.svg),
     url(media/ellipse5.svg), url(media/ellipse6.svg);
   background-repeat: no-repeat;
-  background-position: left top, right 25%, left center, right 75%;
+  background-position:
+    left top,
+    right 25%,
+    left center,
+    right bottom;
+}
+
+.projects > div:first-of-type {
+  width: 100vw;
+  border-bottom: 1px solid #646369;
 }
 
 .project {
@@ -127,9 +139,22 @@
   flex-wrap: wrap;
   border-bottom: transparent;
   background: none;
+  margin-top: 3em;
+}
+
+.project > img {
+  width: 80%;
+}
+
+.project-text {
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: transparent;
+  background: none;
 }
 
 .languages {
+  flex: unset;
   justify-content: center;
   border-bottom: transparent;
   background: none;
@@ -175,6 +200,7 @@ p,
 i {
   color: #edecff;
   font-size: 100px;
+  margin-bottom: unset;
 }
 
 h1 {
@@ -182,7 +208,6 @@ h1 {
   font-weight: bold;
   font-size: 48px;
   margin-top: 63px;
-  margin-bottom: 1px;
 }
 
 h2 {
@@ -193,18 +218,24 @@ h2 {
   padding-left: 1em;
   padding-bottom: 1em;
   text-align: left;
-  border-bottom: 1px solid #646369;
-}
-
-.contact > * {
-  border-bottom: transparent;
 }
 
 .contact > h2 {
   text-align: center;
   padding: 1px;
   padding-top: 1.5em;
-  border: transparent;
+}
+
+.projects > div h2 {
+  max-width: 6em;
+}
+
+.contact > * {
+  border-bottom: transparent;
+}
+
+.contact > h2:not(:first-of-type) {
+  display: none;
 }
 
 h3 {
@@ -223,11 +254,17 @@ h4 {
   margin: 6px;
 }
 
+.handles > li h4 {
+  display: none;
+  margin-right: 18vw;
+  margin-left: 18vw;
+}
+
 p {
   font-size: 20px;
   line-height: 28px;
-  max-width: 84vw;
-  margin-top: 1px;
+  max-width: 23em;
+  margin: 2em;
 }
 
 ul,
@@ -237,18 +274,23 @@ li {
   text-align: left;
 }
 
+ul {
+  justify-self: center;
+  flex: 100%;
+}
+
+.skills > ul {
+  max-width: 45%;
+  margin-left: 4%;
+}
+
 li {
   margin: 15px;
 }
 
-ul {
-  justify-self: center;
-  flex-basis: 80vw;
-  margin: 20px;
-}
-
 form {
   height: 40vh;
+  width: 80vw;
   justify-content: center;
 }
 
@@ -293,7 +335,7 @@ button:disabled {
 input,
 textarea {
   all: unset;
-  width: 80vw;
+  width: 95%;
   margin-top: 39px;
   height: 30px;
   padding: 1em;
@@ -321,10 +363,168 @@ footer > p {
   display: inline-block;
 }
 
-.project img {
-  transition: transform 2s ease;
+.bottom > li p {
+  display: none;
 }
 
-.project img:hover {
-  transform: scale(0.9);
+.navigation > p:not(:first-of-type),
+i:not(:first-of-type) {
+  display: none;
+}
+
+@media screen and (min-device-width: 1500px) {
+  footer > p {
+    display: none;
+  }
+
+  .project-text > p {
+    margin: 1em 1px 1em 1px;
+    text-align: start;
+    flex: 1;
+  }
+
+  .head {
+    background-position: 2em top;
+  }
+
+  .head > p {
+    display: block;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skills > ul {
+    max-width: min-content;
+  }
+
+  .work > h4 {
+    display: none;
+  }
+
+  .handles > li h4 {
+    display: block;
+  }
+
+  .projects {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 25vw);
+    grid-row-gap: 3em;
+    margin-bottom: 15em;
+  }
+
+  .projects > article {
+    grid-column: 1/5;
+    align-items: center;
+  }
+
+  .projects > article:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .projects > div h2 {
+    max-width: 10em;
+    padding-left: 10vw;
+  }
+
+  .project {
+    width: 85%;
+    margin: unset;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-self: center;
+  }
+
+  .project > * {
+    max-height: min-content;
+    padding: unset;
+    width: 80vw;
+  }
+
+  .project > img {
+    width: 50%;
+    transition: transform 2s ease;
+    transition-duration: 0.3s;
+  }
+
+  .project > img:hover {
+    transform: scale(0.9);
+  } 
+
+  .project-text {
+    width: 38%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-left: 1em;
+  }
+
+  .languages {
+    width: min-content;
+  }
+
+  .contact {
+    margin: 1px;
+    width: 100vw;
+  }
+
+  .contact > h2:first-of-type {
+    display: none;
+  }
+
+  .contact > h2:not(:first-of-type) {
+    display: block;
+  }
+
+  form {
+    width: 43em;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  button {
+    margin-bottom: unset;
+  }
+
+  form ul li:last-child {
+    text-align: center;
+  }
+
+  .contact > p {
+    margin-bottom: 4em;
+  }
+
+  .bottom > li p {
+    display: block;
+    margin: unset;
+  }
+
+  .navigation {
+    justify-content: flex-end;
+  }
+
+  .navigation > * {
+    padding-left: 1em;
+  }
+
+  .navigation > p:first-of-type {
+    justify-self: right;
+    text-align: left;
+    padding-right: 60vw;
+  }
+
+  .navigation > p:not(:first-of-type),
+  i:not(:first-of-type) {
+    display: block;
+    justify-self: flex-end;
+    padding-right: 2em;
+  }
+
+  .navigation > i:first-of-type {
+    display: none;
+  }
 }
