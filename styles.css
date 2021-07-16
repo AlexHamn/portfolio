@@ -13,8 +13,8 @@
 
 body {
   background:
-  #191765 
-  url(media/ellipse2.svg);
+    #191765
+    url(media/ellipse2.svg);
   background-repeat: no-repeat;
   background-position: right 15em;
 }
@@ -31,7 +31,6 @@ body {
 }
 
 .container {
-  /* width: 100vw; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +41,6 @@ body {
 
 .grid {
   display: grid;
-  
 }
 
 .head {
@@ -64,10 +62,6 @@ body {
   border: none;
   justify-content: space-around;
   align-content: center;
-}
-
-.navigation > p:not(:first-of-type), i:not(:first-of-type) {
-  display: none;
 }
 
 .skills {
@@ -117,12 +111,6 @@ body {
   text-align: center;
 }
 
-.handles > li h4 {
-  display: none;
-  margin-right: 18vw;
-  margin-left: 18vw;
-}
-
 .projects {
   grid-template-columns: 100%;
   grid-template-rows: min-content;
@@ -140,13 +128,9 @@ body {
     right 75%;
 }
 
-.projects > div:first-of-type{
+.projects > div:first-of-type {
   width: 100vw;
   border-bottom: 1px solid #646369;
-}
-
-.projects > div h2 {
-  max-width: 6em;
 }
 
 .project {
@@ -235,6 +219,10 @@ h2 {
   text-align: left;
 }
 
+.projects > div h2 {
+  max-width: 6em;
+}
+
 .contact > * {
   border-bottom: transparent;
 }
@@ -266,11 +254,22 @@ h4 {
 
 }
 
+.handles > li h4 {
+  display: none;
+  margin-right: 18vw;
+  margin-left: 18vw;
+}
+
 p {
   font-size: 20px;
   line-height: 28px;
   max-width: 23em;
   margin: 2em;
+}
+
+.navigation > p:not(:first-of-type),
+i:not(:first-of-type) {
+  display: none;
 }
 
 ul,
@@ -433,13 +432,12 @@ footer > p {
   }
 
   .projects > article:nth-child(odd) {
-    /* grid-column: 1/4; */
     flex-direction: row-reverse;
   }
 
   .projects > div h2 {
-  max-width: 10em;
-  padding-left: 10vw;
+    max-width: 10em;
+    padding-left: 10vw;
   }
 
   .project {
@@ -450,10 +448,10 @@ footer > p {
   }
 
   .project > * {
-  max-height: min-content;
-  padding: unset;
-  width: 80vw;
-}
+    max-height: min-content;
+    padding: unset;
+    width: 80vw;
+  }
 
   .project > img {
     width: 50%;
@@ -468,7 +466,6 @@ footer > p {
   }
 
   .project-text > p {
-    /* margin-left: unset; */
     margin: 1em 1px 1em 1px;
     text-align: start;
     flex: 1;
@@ -488,7 +485,7 @@ footer > p {
   }
 
   .contact > h2:not(:first-of-type) {
-  display: block;
+    display: block;
   }
 
   form {
