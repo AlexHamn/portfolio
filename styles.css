@@ -383,6 +383,21 @@ footer > p {
     display: none;
   }
 
+  .project-text > p {
+    margin: 1em 1px 1em 1px;
+    text-align: start;
+    flex: 1;
+  }
+
+  footer > p {
+    display: none;
+  }
+
+  .bottom > li p {
+    display: block;
+    margin: unset;
+  }
+
   .navigation > p:first-of-type {
     justify-self: right;
     /* width: 50vw; */
@@ -465,12 +480,6 @@ footer > p {
     margin-left: 1em;
   }
 
-  .project-text > p {
-    margin: 1em 1px 1em 1px;
-    text-align: start;
-    flex: 1;
-  }
-
   .languages {
     width: min-content;
   }
@@ -492,20 +501,12 @@ footer > p {
     width: 66vw;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
   }
 
   button {
     margin-bottom: unset;
-  }
-
-  footer > p {
-    display: none;
-  }
-
-  .bottom > li p {
-    display: block;
-    margin: unset;
   }
 }
