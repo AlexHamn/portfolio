@@ -313,6 +313,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #edecff;
+  transition: 0.1s;
 }
 
 button:hover {
