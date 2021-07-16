@@ -458,7 +458,7 @@ i:not(:first-of-type) {
 
   .project > img:hover {
     transform: scale(0.9);
-  } 
+  }
 
   .project-text {
     width: 38%;
