@@ -392,18 +392,6 @@ i:not(:first-of-type) {
     display: none;
   }
 
-  .navigation > p:first-of-type {
-    justify-self: right;
-    text-align: left;
-    padding-right: 60vw;
-  }
-
-  .navigation > p:not(:first-of-type), i:not(:first-of-type) {
-    display: block;
-    justify-self: flex-end;
-    padding-right: 2em;
-  }
-
   .head {
     background-position: 2em top;
   }
@@ -494,6 +482,18 @@ i:not(:first-of-type) {
   .bottom > li p {
     display: block;
     margin: unset;
+  }
+
+  .navigation > p:first-of-type {
+    justify-self: right;
+    text-align: left;
+    padding-right: 60vw;
+  }
+
+  .navigation > p:not(:first-of-type), i:not(:first-of-type) {
+    display: block;
+    justify-self: flex-end;
+    padding-right: 2em;
   }
 
   form {
