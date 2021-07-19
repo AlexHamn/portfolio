@@ -19,7 +19,7 @@ Here you will eventually find some awesome projects built by yours truly.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://alexhamn.github.io/portfolio/)
 
 ## Authors
 
