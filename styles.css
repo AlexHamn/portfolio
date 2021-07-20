@@ -19,6 +19,10 @@ body {
   background-position: right 15em;
 }
 
+label {
+  display: none;
+}
+
 .logo {
   font-style: normal;
   font-weight: 500;
