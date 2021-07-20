@@ -11,7 +11,7 @@
   background: none;
 }
 
-body{
+body {
   background:
     #191765
     url(media/ellipse2.svg);
@@ -182,6 +182,7 @@ label {
 
 .contact {
   padding-bottom: 4.7em;
+  flex-basis: 460px;
 }
 
 .submit {
@@ -382,10 +383,6 @@ footer > p {
 .navigation > p:not(:first-of-type),
 i:not(:first-of-type) {
   display: none;
-}
-
-.contact > p {
-  margin-bottom: 4em;
 }
 
 @media screen and (min-device-width: 1500px) {
