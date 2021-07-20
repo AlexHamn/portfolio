@@ -311,7 +311,7 @@ button {
   height: 48px;
   left: 12px;
   top: 12px;
-  background: #7d73fc;
+  background: #3f31f9;
   margin-top: 14px;
   margin-bottom: 34px;
   margin-right: 65vw;
@@ -323,7 +323,7 @@ button {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #edecff;
+  color: white;
   transition: 0.1s;
 }
 
