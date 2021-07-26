@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex's Portifolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
   <body class="container bod">
     <header class="container navigation">
-      <p class="logo"><a href="index.html">John Doe</a></p>
-      <p class="logo"><a href="index.html">Portfolio</a></p>
-      <p class="logo"><a href="index.html">About</a></p>
-      <p class="logo"><a href="index.html">Contact</a></p>
-      <i class="material-icons">menu</i>
+      <p class="logo"><a class="menuitem1" href="index.html">John Doe</a></p>
+      <p class="logo"><a href="#portfolio">Portfolio</a></p>
+      <p class="logo"><a href="#skills">About</a></p>
+      <p class="logo"><a href="#contact">Contact</a></p>
+      <i class="material-icons menuicon">menu
+        <div class="menuli1">
+          <p class="logo"><a href="#portfolio">Portfolio</a></p>
+          <p class="logo"><a href="#skills">About</a></p>
+          <p class="logo"><a href="#contact">Contact</a></p>
+        </div>
+      </i>
       <i class="material-icons">email</i>
     </header>
     <main>
@@ -28,7 +35,7 @@
           you need coded, don’t hestiate to contact me.
         </p>
       </section>
-      <section class="container skills">
+      <section id="skills" class="container skills">
         <ul>
           <li class="title">Language</li>
           <li>Javascript</li>
@@ -81,7 +88,7 @@
         </ul>
         <h4>↓ Work</h4>
       </section>
-      <section class="grid projects">
+      <section id ="portfolio" class="grid projects">
         <div>
           <h2>
             MY RECENT WORK
@@ -160,7 +167,7 @@
           </div>
         </article>
       </section>
-      <section class="container contact">
+      <section id="contact" class="container contact">
         <h2>CONTACT US</h2>
         <h2>Let's chat!</h2>
         <p> 

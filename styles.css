@@ -1,20 +1,12 @@
 * {
   color: rgb(240, 238, 238);
-  font-family:
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   background: none;
 }
 
 body {
-  background:
-    #191765
-    url(media/ellipse2.svg);
+  background: #191765 url(media/ellipse2.svg);
   background-repeat: no-repeat;
   background-position: right 15em;
 }
@@ -75,10 +67,25 @@ label {
 
 .navigation {
   margin-top: 50px;
-  width: 100vw;
+  width: 80%;
   border: none;
   justify-content: space-around;
   align-content: center;
+}
+
+.menuli1 {
+  display: none;
+}
+
+.menuli1-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 100vw;
+}
+
+.menuitem1-1 {
+  display: none;
 }
 
 .skills {
@@ -127,17 +134,10 @@ label {
   grid-template-columns: 100%;
   grid-template-rows: min-content;
   padding-top: 60px;
-  background:
-    url(media/ellipse3.svg),
-    url(media/ellipse4.svg),
-    url(media/ellipse5.svg),
-    url(media/ellipse6.svg);
+  background: url(media/ellipse3.svg), url(media/ellipse4.svg),
+    url(media/ellipse5.svg), url(media/ellipse6.svg);
   background-repeat: no-repeat;
-  background-position:
-    left top,
-    right 25%,
-    left center,
-    right bottom;
+  background-position: left top, right 25%, left center, right bottom;
 }
 
 .projects > div:first-of-type {
@@ -232,6 +232,10 @@ h2 {
   text-align: left;
 }
 
+.contact > p {
+  margin-bottom: 150px;
+}
+
 .contact > h2 {
   text-align: center;
   padding: 1px;
@@ -244,6 +248,7 @@ h2 {
 
 .contact > * {
   border-bottom: transparent;
+  margin-bottom: 50px;
 }
 
 .contact > h2:not(:first-of-type) {
@@ -385,7 +390,7 @@ i:not(:first-of-type) {
   display: none;
 }
 
-@media screen and (min-device-width: 1500px) {
+@media screen and (min-device-width: 1000px) {
   footer > p {
     display: none;
   }
@@ -505,10 +510,6 @@ i:not(:first-of-type) {
 
   form ul li:last-child {
     text-align: center;
-  }
-
-  .contact > p {
-    margin-bottom: 4em;
   }
 
   .bottom > li p {
