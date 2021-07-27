@@ -2,8 +2,14 @@
 *::before,
 *::after {
   color: rgb(240, 238, 238);
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family:
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  "Open Sans",
+  "Helvetica Neue",
+  sans-serif;
   background: none;
   text-decoration: none;
   background-repeat: no-repeat;
@@ -167,10 +173,17 @@ label {
   grid-template-columns: 100%;
   grid-template-rows: min-content;
   padding-top: 60px;
-  background: url(media/ellipse3.svg), url(media/ellipse4.svg),
-    url(media/ellipse5.svg), url(media/ellipse6.svg);
+  background:
+  url(media/ellipse3.svg),
+  url(media/ellipse4.svg),
+  url(media/ellipse5.svg),
+  url(media/ellipse6.svg);
   background-repeat: no-repeat;
-  background-position: left top, right 25%, left center, right bottom;
+  background-position:
+  left top,
+  right 25%,
+  left center,
+  right bottom;
 }
 
 .projects > div:first-of-type {
