@@ -430,7 +430,7 @@ i:not(:first-of-type) {
   margin-right: 5em;
 }
 
-.menuItem {
+.menuItemStyle {
   width: 100vw;
   justify-content: space-around;
   border-bottom: transparent;
