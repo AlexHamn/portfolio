@@ -1,8 +1,12 @@
-* {
+*,
+*::before,
+*::after {
   color: rgb(240, 238, 238);
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   background: none;
+  text-decoration: none;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -73,19 +77,48 @@ label {
   align-content: center;
 }
 
-.menuli1 {
+.hidden {
   display: none;
 }
 
-.menuli1-1 {
+.menu {
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  background: url(media/ellipse7.svg), url(media/ellipse8.svg), #191765;
+  background-repeat: no-repeat;
+  background-position: left center, right bottom;
   width: 100vw;
+  height: 100vh;
+  margin-top: 88vh;
+  position: fixed;
+  z-index: 9999 !important;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.menuitem1-1 {
-  display: none;
+.menu li {
+  margin-top: 4em;
+}
+
+.menu li a {
+  font-weight: 500;
+  font-size: 24px;
+  margin-right: 7em;
+}
+
+.menu li i:not(:first-of-type) {
+  color: #a784df;
+}
+
+.menu li:first-of-type {
+  align-self: flex-end;
+  margin-right: 5em;
+}
+
+.menuItem {
+  width: 100vw;
+  justify-content: space-around;
+  border-bottom: transparent;
 }
 
 .skills {

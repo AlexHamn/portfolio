@@ -1,9 +1,14 @@
-let menuIcon=document.querySelector(".menuicon");
-let menuli=document.querySelector(".menuli1");
-let menuItem=document.querySelector(".menuitem1");
+let menuIcon = document.querySelector(".menuIcon");
+let menu = document.querySelector(".hidden");
+let menuItem = document.querySelector(".menuitem1");
+let closeIcon = document.querySelector(".closeIcon");
 
+menuIcon.addEventListener("click", () => {
+  menu.classList.add("menu");
+  menu.classList.remove("hidden");
+});
 
-menuIcon.addEventListener('click', () => {
-  menuli.classList.add(("menuli1-1"));
-  menuItem.classList.add("menuitem1-1");
+closeIcon.addEventListener("click", () => {
+  menu.classList.remove("menu");
+  menu.classList.add("hidden");
 });
