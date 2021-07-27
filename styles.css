@@ -3,13 +3,13 @@
 *::after {
   color: rgb(240, 238, 238);
   font-family:
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  "Open Sans",
-  "Helvetica Neue",
-  sans-serif;
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   background: none;
   text-decoration: none;
   background-repeat: no-repeat;
@@ -22,6 +22,10 @@ body {
 }
 
 label {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
@@ -83,50 +87,6 @@ label {
   align-content: center;
 }
 
-.hidden {
-  display: none;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  background: url(media/ellipse7.svg), url(media/ellipse8.svg), #191765;
-  background-repeat: no-repeat;
-  background-position: left center, right bottom;
-  width: 100vw;
-  height: 100vh;
-  margin-top: 88vh;
-  position: fixed;
-  z-index: 9999 !important;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.menu li {
-  margin-top: 4em;
-}
-
-.menu li a {
-  font-weight: 500;
-  font-size: 24px;
-  margin-right: 7em;
-}
-
-.menu li i:not(:first-of-type) {
-  color: #a784df;
-}
-
-.menu li:first-of-type {
-  align-self: flex-end;
-  margin-right: 5em;
-}
-
-.menuItem {
-  width: 100vw;
-  justify-content: space-around;
-  border-bottom: transparent;
-}
-
 .skills {
   flex-direction: row;
   flex-wrap: wrap;
@@ -174,16 +134,16 @@ label {
   grid-template-rows: min-content;
   padding-top: 60px;
   background:
-  url(media/ellipse3.svg),
-  url(media/ellipse4.svg),
-  url(media/ellipse5.svg),
-  url(media/ellipse6.svg);
+    url(media/ellipse3.svg),
+    url(media/ellipse4.svg),
+    url(media/ellipse5.svg),
+    url(media/ellipse6.svg);
   background-repeat: no-repeat;
   background-position:
-  left top,
-  right 25%,
-  left center,
-  right bottom;
+    left top,
+    right 25%,
+    left center,
+    right bottom;
 }
 
 .projects > div:first-of-type {
@@ -434,6 +394,46 @@ footer > p {
 .navigation > p:not(:first-of-type),
 i:not(:first-of-type) {
   display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: url(media/ellipse7.svg), url(media/ellipse8.svg), #191765;
+  background-repeat: no-repeat;
+  background-position: left center, right bottom;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 88vh;
+  position: fixed;
+  z-index: 9999 !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu li {
+  margin-top: 4em;
+}
+
+.menu li a {
+  font-weight: 500;
+  font-size: 24px;
+  margin-right: 7em;
+}
+
+.menu li i:not(:first-of-type) {
+  color: #a784df;
+}
+
+.menu li:first-of-type {
+  align-self: flex-end;
+  margin-right: 5em;
+}
+
+.menuItem {
+  width: 100vw;
+  justify-content: space-around;
+  border-bottom: transparent;
 }
 
 @media screen and (min-device-width: 1000px) {
