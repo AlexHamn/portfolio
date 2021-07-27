@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   color: rgb(240, 238, 238);
   font-family:
     Roboto,
@@ -9,17 +11,21 @@
     "Helvetica Neue",
     sans-serif;
   background: none;
+  text-decoration: none;
+  background-repeat: no-repeat;
 }
 
 body {
-  background:
-    #191765
-    url(media/ellipse2.svg);
+  background: #191765 url(media/ellipse2.svg);
   background-repeat: no-repeat;
   background-position: right 15em;
 }
 
 label {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
@@ -75,7 +81,7 @@ label {
 
 .navigation {
   margin-top: 50px;
-  width: 100vw;
+  width: 80%;
   border: none;
   justify-content: space-around;
   align-content: center;
@@ -244,6 +250,7 @@ h2 {
 
 .contact > * {
   border-bottom: transparent;
+  margin-bottom: 50px;
 }
 
 .contact > h2:not(:first-of-type) {
@@ -376,6 +383,10 @@ footer > p {
   display: inline-block;
 }
 
+.contact > p {
+  margin-bottom: 150px;
+}
+
 .bottom > li p {
   display: none;
 }
@@ -385,7 +396,47 @@ i:not(:first-of-type) {
   display: none;
 }
 
-@media screen and (min-device-width: 1500px) {
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: url(media/ellipse7.svg), url(media/ellipse8.svg), #191765;
+  background-repeat: no-repeat;
+  background-position: left center, right bottom;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 88vh;
+  position: fixed;
+  z-index: 9999 !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu li {
+  margin-top: 4em;
+}
+
+.menu li a {
+  font-weight: 500;
+  font-size: 24px;
+  margin-right: 7em;
+}
+
+.menu li i:not(:first-of-type) {
+  color: #a784df;
+}
+
+.menu li:first-of-type {
+  align-self: flex-end;
+  margin-right: 5em;
+}
+
+.menuItemStyle {
+  width: 100vw;
+  justify-content: space-around;
+  border-bottom: transparent;
+}
+
+@media screen and (min-device-width: 1000px) {
   footer > p {
     display: none;
   }
@@ -505,10 +556,6 @@ i:not(:first-of-type) {
 
   form ul li:last-child {
     text-align: center;
-  }
-
-  .contact > p {
-    margin-bottom: 4em;
   }
 
   .bottom > li p {

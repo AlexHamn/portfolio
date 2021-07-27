@@ -6,16 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex's Portifolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
   <body class="container bod">
     <header class="container navigation">
-      <p class="logo"><a href="index.html">John Doe</a></p>
-      <p class="logo"><a href="index.html">Portfolio</a></p>
-      <p class="logo"><a href="index.html">About</a></p>
-      <p class="logo"><a href="index.html">Contact</a></p>
-      <i class="material-icons">menu</i>
+      <p class="logo"><a class="menuitem1" href="index.html">John Doe</a></p>
+      <p class="logo"><a href="#portfolio">Portfolio</a></p>
+      <p class="logo"><a href="#skills">About</a></p>
+      <p class="logo"><a href="#contact">Contact</a></p>
+      <i class="material-icons menuIcon">menu</i>
+      <ul class="hidden">
+        <li>
+          <i class="material-icons closeIcon">close</i>
+        </li>
+        <li class="container menuItemStyle" id="menuItem1">
+          <a href="#portfolio">Portfolio</a>
+          <i class="material-icons">chevron_right</i>
+        </li>
+        <li class="container menuItemStyle" id="menuItem2">
+          <a href="#skills">About </a>
+          <i class="material-icons">chevron_right</i>
+        </li>
+        <li class="container menuItemStyle" id="menuItem3">
+          <a href="#contact">Contact </a>
+          <i class="material-icons">chevron_right</i>
+        </li>
+      </ul>
       <i class="material-icons">email</i>
     </header>
     <main>
@@ -28,7 +47,7 @@
           you need coded, don’t hestiate to contact me.
         </p>
       </section>
-      <section class="container skills">
+      <section id="skills" class="container skills">
         <ul>
           <li class="title">Language</li>
           <li>Javascript</li>
@@ -81,20 +100,22 @@
         </ul>
         <h4>↓ Work</h4>
       </section>
-      <section class="grid projects">
+      <section id="portfolio" class="grid projects">
         <div>
-          <h2>
-            MY RECENT WORK
-          </h2>
+          <h2>MY RECENT WORK</h2>
         </div>
         <article class="container project">
-          <img src="https://picsum.photos/684/448?grayscale" alt="placeholder"/>
+          <img
+            src="https://picsum.photos/684/448?grayscale"
+            alt="placeholder"
+          />
           <div class="container project-text">
             <h3>Multi-Post Stories</h3>
             <p>
               A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a standard dummy text.
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
             </p>
             <ul class="container languages">
               <li>css</li>
@@ -106,13 +127,17 @@
           </div>
         </article>
         <article class="container project">
-          <img src="https://picsum.photos/684/448?grayscale" alt="placeholder"/>
+          <img
+            src="https://picsum.photos/684/448?grayscale"
+            alt="placeholder"
+          />
           <div class="container project-text">
             <h3>Multi-Post Stories</h3>
             <p>
               A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a standard dummy text.
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
             </p>
             <ul class="container languages">
               <li>css</li>
@@ -124,13 +149,17 @@
           </div>
         </article>
         <article class="container project">
-          <img src="https://picsum.photos/684/448?grayscale" alt="placeholder"/>
+          <img
+            src="https://picsum.photos/684/448?grayscale"
+            alt="placeholder"
+          />
           <div class="container project-text">
             <h3>Multi-Post Stories</h3>
             <p>
               A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a standard dummy text.
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
             </p>
             <ul class="container languages">
               <li>css</li>
@@ -142,13 +171,17 @@
           </div>
         </article>
         <article class="container project">
-          <img src="https://picsum.photos/684/448?grayscale" alt="placeholder"/>
+          <img
+            src="https://picsum.photos/684/448?grayscale"
+            alt="placeholder"
+          />
           <div class="container project-text">
             <h3>Multi-Post Stories</h3>
             <p>
               A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a standard dummy text.
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
             </p>
             <ul class="container languages">
               <li>css</li>
@@ -160,30 +193,55 @@
           </div>
         </article>
       </section>
-      <section class="container contact">
+      <section id="contact" class="container contact">
         <h2>CONTACT US</h2>
         <h2>Let's chat!</h2>
-        <p> 
+        <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
-          with it 
+          with it
         </p>
-        <form action="https://formspree.io/f/mbjqaodr" method="POST" class="container">
+        <form
+          action="https://formspree.io/f/mbjqaodr"
+          method="POST"
+          class="container"
+        >
           <ul>
             <li>
               <label for="name">name</label>
-              <input type="text" id="name" name="user_name" placeholder="Alex Gamino" maxlength="30" required />
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Alex Gamino"
+                maxlength="30"
+                required
+              />
             </li>
             <li>
               <label for="mail">mail</label>
-              <input type="email" id="mail" name="user_email" placeholder="alex@gmail.com" required/>
+              <input
+                type="email"
+                id="mail"
+                name="user_email"
+                placeholder="alex@gmail.com"
+                required
+              />
             </li>
             <li>
               <label for="msg">send a message</label>
-              <textarea name="user_message" id="msg" placeholder="Enter text here" maxlength="500" required></textarea>
+              <textarea
+                name="user_message"
+                id="msg"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
             </li>
             <li>
-              <button type="submit" value="Submit" class="submit">Submit</button>
+              <button type="submit" value="Submit" class="submit">
+                Submit
+              </button>
             </li>
           </ul>
         </form>
@@ -214,5 +272,6 @@
         <p>emailhere@email.com</p>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
