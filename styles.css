@@ -238,10 +238,6 @@ h2 {
   text-align: left;
 }
 
-.contact > p {
-  margin-bottom: 150px;
-}
-
 .contact > h2 {
   text-align: center;
   padding: 1px;
@@ -385,6 +381,10 @@ input ::placeholder {
 
 footer > p {
   display: inline-block;
+}
+
+.contact > p {
+  margin-bottom: 150px;
 }
 
 .bottom > li p {
