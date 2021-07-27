@@ -436,6 +436,43 @@ i:not(:first-of-type) {
   border-bottom: transparent;
 }
 
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left:0;
+  overflow-y: scroll;
+  }
+
+.pop-up-tittle {
+  padding-top: 100%;
+}  
+
+.pop-up-button {
+  display: flex;
+  margin: 1px;
+  padding: 5px 10px;
+  width: min-content;
+  background-color: #7D73FC;
+  margin-bottom: 20px;
+}
+
+.pop-up-button > p {
+  margin: 1px;
+  padding: 1px;
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: bolder;
+ }
+
+ .pop-up > .languages {
+   margin-bottom: 20px;
+ }
+
 @media screen and (min-device-width: 1000px) {
   footer > p {
     display: none;
