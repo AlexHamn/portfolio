@@ -184,6 +184,7 @@ label {
   padding: 10px;
   border-right: 1px solid #646369;
   border-left: 1px solid #646369;
+  white-space: nowrap;
 }
 
 .contact {
@@ -387,6 +388,18 @@ footer > p {
   margin-bottom: 150px;
 }
 
+.popUp-button > p {
+  margin: 1px;
+  padding: 1px;
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: bolder;
+}
+
+.popUp > .languages {
+  margin-bottom: 20px;
+}
+
 .bottom > li p {
   display: none;
 }
@@ -434,6 +447,65 @@ i:not(:first-of-type) {
   width: 100vw;
   justify-content: space-around;
   border-bottom: transparent;
+}
+
+.backdrop {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.popUp {
+  flex-direction: column;
+  width: 90vw;
+  height: 90vh;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  background-color: rgba(202, 198, 231, 0.37);
+  border: 1px solid white;
+}
+
+.popUp-titleContainer {
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  height: min-content;
+  border-bottom: transparent;
+}
+
+.popUp-title {
+  /* padding-top: 100%; */
+  margin-top: unset;
+  margin-bottom: 2em;
+}
+
+.popUp-button {
+  display: flex;
+  margin: 1px;
+  padding: 5px 10px;
+  width: min-content;
+  background-color: #7d73fc;
+  margin-bottom: 20px;
+}
+
+.popUp-content {
+  min-height: min-content;
+  padding-top: 4em;
+  overflow-y: scroll;
+}
+
+.popUp-content img {
+  width: 80%;
+}
+
+.closeIcon {
+  /* should align self to the right */
 }
 
 @media screen and (min-device-width: 1000px) {
@@ -586,5 +658,14 @@ i:not(:first-of-type) {
 
   .navigation > i:first-of-type {
     display: none;
+  }
+
+  .popUp div:last-of-type {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .popUp div:last-of-type a button {
+    margin: 3em;
   }
 }
