@@ -454,7 +454,7 @@ i:not(:first-of-type) {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   position: fixed;
   top: 0;
   left: 0;
@@ -468,7 +468,7 @@ i:not(:first-of-type) {
   top: 5vh;
   left: 5vw;
   overflow-y: scroll;
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(202, 198, 231, 0.37);
   border: 1px solid white;
 }
 
@@ -658,5 +658,14 @@ i:not(:first-of-type) {
 
   .navigation > i:first-of-type {
     display: none;
+  }
+
+  .popUp div:last-of-type {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .popUp div:last-of-type a button {
+    margin: 3em;
   }
 }

@@ -46,14 +46,15 @@ const body = document.body;
         const li1 = document.createElement('li');
         const li2 = document.createElement('li');
         const li3 = document.createElement('li');
-      const button0 = document.createElement('button');
-        const p1 = document.createElement('p');
-        const a1 = document.createElement('a');
-          const i1 = document.createElement('i');
-      const button1 = document.createElement('button');
-        const p2 = document.createElement('p');
-        const a2 = document.createElement('a');
-          const img1 = document.createElement('img');
+      const div3 = document.createElement('div');
+        const button0 = document.createElement('button');
+          const p1 = document.createElement('p');
+          const a1 = document.createElement('a');
+            const i1 = document.createElement('i');
+        const button1 = document.createElement('button');
+          const p2 = document.createElement('p');
+          const a2 = document.createElement('a');
+            const img1 = document.createElement('img');
 
 
 
@@ -86,13 +87,15 @@ function popUp(id) {
 
   article.append(div0);
 
-  div0.append(div1, ul, a1, a2);
+  div0.append(div1, ul, div3);
 
   div1.append(div2, img0, p0);
 
   div2.append(h3, i0);
 
   ul.append(li0, li1, li2);
+
+  div3.append(a1, a2);
 
   a1.append(button0);
 
