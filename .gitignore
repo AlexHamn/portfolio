@@ -1,7 +1,11 @@
 .hintrc
 
+.popupformat.html
+
 .stylelintrc.json
 
 package-lock.json 
 
 node_modules
+
+popupformat.html
