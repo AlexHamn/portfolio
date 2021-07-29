@@ -467,7 +467,6 @@ i:not(:first-of-type) {
   position: fixed;
   top: 5vh;
   left: 5vw;
-  overflow-y: scroll;
   background-color: rgba(202, 198, 231, 0.37);
   border: 1px solid white;
 }
@@ -498,6 +497,7 @@ i:not(:first-of-type) {
 .popUp-content {
   min-height: min-content;
   padding-top: 4em;
+  overflow-y: scroll;
 }
 
 .popUp-content img {
