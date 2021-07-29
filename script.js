@@ -128,7 +128,7 @@ function popUp() {
   p2.textContent = 'See Source';
 }
 
-function project() {
+function project(name, img, description, tech0, tech1, tech2, tech3) {
 
   const article = document.createElement('article');
     const div0 = document.createElement('div');
@@ -151,21 +151,21 @@ function project() {
   ul.append(li0, li1, li2, li3);
 
   article.setAttribute('class', 'container project');
-  img0.setAttribute('src', images[0]);
+  img0.setAttribute('src', img);
   img0.setAttribute('alt', 'project picture');
   div0.setAttribute('class', 'container project-text');
   ul.setAttribute('class', 'container languages');
   button0.setAttribute('onclick', 'popUp()');
 
-  h3.textContent = names[0];
-  p0.textContent = descriptions[0];
-  li0.textContent = technologies[0];
-  li1.textContent = technologies[1];
-  li2.textContent = technologies[2];
-  li3.textContent = technologies[3];
+  h3.textContent = name;
+  p0.textContent = description;
+  li0.textContent = tech0;
+  li1.textContent = tech1;
+  li2.textContent = tech2;
+  li3.textContent = tech3;
   button0.textContent = 'See Project';
 }
 
 for (let i = 0; i < names.length; i++) {
-  project();
+  project(names[i], images[i], descriptions[i], technologies[0], technologies[1], technologies[2], technologies[3]);
 }
