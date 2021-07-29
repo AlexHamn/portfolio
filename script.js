@@ -128,7 +128,7 @@ function popUp() {
   p2.textContent = 'See Source';
 }
 
-function project(name, img, description, tech0, tech1, tech2, tech3) {
+function project(name, img, description, tech0, tech1, tech2, tech3, buttonId) {
 
   const article = document.createElement('article');
     const div0 = document.createElement('div');
@@ -155,6 +155,7 @@ function project(name, img, description, tech0, tech1, tech2, tech3) {
   img0.setAttribute('alt', 'project picture');
   div0.setAttribute('class', 'container project-text');
   ul.setAttribute('class', 'container languages');
+  button0.setAttribute('id', buttonId)
   button0.setAttribute('onclick', 'popUp()');
 
   h3.textContent = name;
@@ -167,5 +168,5 @@ function project(name, img, description, tech0, tech1, tech2, tech3) {
 }
 
 for (let i = 0; i < names.length; i++) {
-  project(names[i], images[i], descriptions[i], technologies[0], technologies[1], technologies[2], technologies[3]);
+  project(names[i], images[i], descriptions[i], technologies[0], technologies[1], technologies[2], technologies[3], i);
 }
