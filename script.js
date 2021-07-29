@@ -57,12 +57,14 @@ const body = document.body;
 
 
 
-let names = ['name1', 'name2', 'name3'];
+let names = ['Multi-Post Stories', 'Multi-Post Stories', 'Multi-Post Stories', 'Multi-Post Stories'];
 let images = [
+  'https://picsum.photos/684/448?grayscale',
   'https://picsum.photos/684/448?grayscale',
   'https://picsum.photos/684/448?grayscale',
   'https://picsum.photos/684/448?grayscale'];
 let descriptions = [
+  'I really dont want to input such a long text into an array, I think it makes the code look awfull, but it\'s a requirement so I guess I\'ll just do it and don\'t complain about it cause I\'m already waaaay too delayed with this project; also, writing this text helps me practice my touchtyping so I guess that is a silverlining of all of this, anyway, I hate to write paragraphs in arrays :)',
   'I really dont want to input such a long text into an array, I think it makes the code look awfull, but it\'s a requirement so I guess I\'ll just do it and don\'t complain about it cause I\'m already waaaay too delayed with this project; also, writing this text helps me practice my touchtyping so I guess that is a silverlining of all of this, anyway, I hate to write paragraphs in arrays :)',
   'I really dont want to input such a long text into an array, I think it makes the code look awfull, but it\'s a requirement so I guess I\'ll just do it and don\'t complain about it cause I\'m already waaaay too delayed with this project; also, writing this text helps me practice my touchtyping so I guess that is a silverlining of all of this, anyway, I hate to write paragraphs in arrays :)',
   'I really dont want to input such a long text into an array, I think it makes the code look awfull, but it\'s a requirement so I guess I\'ll just do it and don\'t complain about it cause I\'m already waaaay too delayed with this project; also, writing this text helps me practice my touchtyping so I guess that is a silverlining of all of this, anyway, I hate to write paragraphs in arrays :)'];
@@ -70,13 +72,15 @@ let technologies = ['flash', 'html', 'jS', 'css', 'Ruby on Rails', 'bootstrap'];
 let liveLinks = [
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ'];
 let sourceLinks = [
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ'];
 
-function popUp() {
+function popUp(id) {
 
   body.append(article);
 
@@ -106,23 +110,23 @@ function popUp() {
   h3.setAttribute('class', 'popUp-title');
   i0.setAttribute('class', 'material-icons closeIcon');
   i0.setAttribute('onclick', 'article.remove()');
-  img0.setAttribute('src', images[0]);
+  img0.setAttribute('src', images[id]);
   img0.setAttribute('alt', 'placeholder');
   ul.setAttribute('class', 'container languages');
   button0.setAttribute('class', 'popUp-button');
-  a1.setAttribute('href', liveLinks[0]);
+  a1.setAttribute('href', liveLinks[id]);
   i1.setAttribute('class', 'material-icons');
   button1.setAttribute('class', 'popUp-button');
-  a2.setAttribute('href', sourceLinks[1]);
+  a2.setAttribute('href', sourceLinks[id]);
   img1.setAttribute('src', 'media/icons/github.svg');
   img1.setAttribute('alt', 'github');
 
-  h3.textContent = names[0];
+  h3.textContent = names[id];
   i0.textContent = 'close';
-  p0.textContent = descriptions[0];
-  li0.textContent = technologies[0];
-  li1.textContent = technologies[1];
-  li2.textContent = technologies[2];
+  p0.textContent = descriptions[id];
+  li0.textContent = technologies[id];
+  li1.textContent = technologies[id];
+  li2.textContent = technologies[id];
   p1.textContent = 'See Live';
   i1.textContent = 'stream';
   p2.textContent = 'See Source';
@@ -156,7 +160,7 @@ function project(name, img, description, tech0, tech1, tech2, tech3, buttonId) {
   div0.setAttribute('class', 'container project-text');
   ul.setAttribute('class', 'container languages');
   button0.setAttribute('id', buttonId)
-  button0.setAttribute('onclick', 'popUp()');
+  button0.setAttribute('onclick', 'popUp(this.id)');
 
   h3.textContent = name;
   p0.textContent = description;
