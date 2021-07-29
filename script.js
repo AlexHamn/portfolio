@@ -86,7 +86,7 @@ function popUp(id) {
 
   article.append(div0);
 
-  div0.append(div1, ul, button0, button1);
+  div0.append(div1, ul, a1, a2);
 
   div1.append(div2, img0, p0);
 
@@ -94,13 +94,13 @@ function popUp(id) {
 
   ul.append(li0, li1, li2);
 
-  button0.append(p1, a1);
+  a1.append(button0);
 
-  a1.append(i1);
+  button0.append(p1, i1);
 
-  button1.append(p2, a2);
+  a2.append(button1);
 
-  a2.append(img1);
+  button1.append(p2, img1);
 
 
   article.setAttribute('class', 'backdrop');
