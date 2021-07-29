@@ -1,5 +1,7 @@
 .hintrc
 
+.vscode
+
 .popupformat.html
 
 .stylelintrc.json
@@ -9,3 +11,5 @@ package-lock.json
 node_modules
 
 popupformat.html
+
+.DS_Store
