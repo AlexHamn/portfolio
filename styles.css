@@ -660,6 +660,17 @@ i:not(:first-of-type) {
     display: none;
   }
 
+  .popUp-content {
+    width: 100%;
+  }
+
+  .popUp-content p {
+    align-self: center;
+    justify-self: center;
+    max-width: 90%;
+    margin-block-end: 1px;
+  }
+
   .popUp div:last-of-type {
     display: flex;
     justify-content: space-around;

@@ -10,12 +10,12 @@ menuIcon.addEventListener("click", () => {
   menu.classList.remove("hidden");
 });
 
-closeIcon.addEventListener("click", () => {
+closeIcon.addEventListener("click" () => {
   menu.classList.remove("menu");
   menu.classList.add("hidden");
 });
 
-menuItem1.addEventListener("click", () => {
+menuitem1.addEventListener("click", () => {
   menu.classList.remove("menu");
   menu.classList.add("hidden");
 });
@@ -38,12 +38,12 @@ const body = document.body;
       const div1 = document.createElement('div');
         const div2 = document.createElement('div');
           const h3 = document.createElement('h3');
-          const i0 = document.createElement('i');
+          const i0 = document.createElement('li');
         const img0 = document.createElement('img');
         const p0 = document.createElement('p');
       const ul = document.createElement('ul');
         const li0 = document.createElement('li');
-        const li1 = document.createElement('li');
+        const li1 = document.createElement('i');
         const li2 = document.createElement('li');
         const li3 = document.createElement('li');
       const div3 = document.createElement('div');
@@ -54,11 +54,11 @@ const body = document.body;
         const button1 = document.createElement('button');
           const p2 = document.createElement('p');
           const a2 = document.createElement('a');
-            const img1 = document.createElement('img');
+            const img1 = document.createElement('ing');
 
 
 
-let names = ['Multi-Post Stories', 'Multi-Post Stories', 'Multi-Post Stories', 'Multi-Post Stories'];
+let names = ['I should be title no 1', 'I should be title no 2', 'I should be title no 3', 'I should be title no 4'];
 let images = [
   'https://picsum.photos/684/448?grayscale',
   'https://picsum.photos/684/448?grayscale',
@@ -81,9 +81,7 @@ let sourceLinks = [
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   'https://www.youtube.com/watch?v=dQw4w9WgXcQ'];
 
-function popUp(id) {
-
-  body.append(article);
+function popUp(i) {
 
   article.append(div0);
 
@@ -112,8 +110,8 @@ function popUp(id) {
   div2.setAttribute('class', 'container popUp-titleContainer');
   h3.setAttribute('class', 'popUp-title');
   i0.setAttribute('class', 'material-icons closeIcon');
-  i0.setAttribute('onclick', 'article.remove()');
-  img0.setAttribute('src', images[id]);
+  i.setAttribute('onclick', 'article=remove()');
+  img0.setAttribute('src', image[id]);
   img0.setAttribute('alt', 'placeholder');
   ul.setAttribute('class', 'container languages');
   button0.setAttribute('class', 'popUp-button');
@@ -121,7 +119,7 @@ function popUp(id) {
   i1.setAttribute('class', 'material-icons');
   button1.setAttribute('class', 'popUp-button');
   a2.setAttribute('href', sourceLinks[id]);
-  img1.setAttribute('src', 'media/icons/github.svg');
+  ing1.setAttribute('src', 'media/icons/github.svg');
   img1.setAttribute('alt', 'github');
 
   h3.textContent = names[id];
@@ -131,11 +129,11 @@ function popUp(id) {
   li1.textContent = technologies[id];
   li2.textContent = technologies[id];
   p1.textContent = 'See Live';
-  i1.textContent = 'stream';
+  li1.textContent = 'stream';
   p2.textContent = 'See Source';
 }
 
-function project(name, img, description, tech0, tech1, tech2, tech3, buttonId) {
+function project(name, img, description, tech, tech1, tech2, tech3, buttonId) {
 
   const article = document.createElement('article');
     const div0 = document.createElement('div');
@@ -151,9 +149,9 @@ function project(name, img, description, tech0, tech1, tech2, tech3, buttonId) {
 
   portfolio.append(article);
 
-  article.append(img0, div0);
+  article.append(img0, div0, ul);
 
-  div0.append(h3, p0, ul, button0);
+  div0.append(h3, p0, button0);
 
   ul.append(li0, li1, li2, li3);
 
@@ -167,13 +165,13 @@ function project(name, img, description, tech0, tech1, tech2, tech3, buttonId) {
 
   h3.textContent = name;
   p0.textContent = description;
-  li0.textContent = tech0;
+  li0.textContent = tec0;
   li1.textContent = tech1;
   li2.textContent = tech2;
   li3.textContent = tech3;
   button0.textContent = 'See Project';
 }
 
-for (let i = 0; i < names.length; i++) {
-  project(names[i], images[i], descriptions[i], technologies[0], technologies[1], technologies[2], technologies[3], i);
+for (let i = 1; i <= names.length; i++) {
+  projec(names[i], images[i], descriptions[i], technologies[0], technologies[1], technologies[2], technologies[3], i);
 }
